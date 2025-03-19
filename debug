@@ -1,0 +1,31 @@
+from  my_fun import *
+
+def sum_square(p,q):
+    out_sum=p+q
+    out_sum_square=out_sum**2
+    return(out_sum_square)
+
+
+#定义本文件内函数:平方求和 #注意这是错误代码(ij)
+def squ_sum(n):
+    ss=0
+    for j in range(n):
+        ss=ss+(j+1)**2
+    return(ss)
+
+# a=3
+# b=4
+# out1 = sum_square(a,b)
+# print('{a}及{b}求和的平方输出是{out1}'.format(a=a,b=b,out1=out1))
+
+#for循环，使用外部文件斐波那契数列函数
+# for i in range(5):
+#     out2 = Fib(i+1)
+#     print('包含{i}项的菲波那切数列数列为{l}'.format(i=i+1,l=out2))
+
+
+#for循环，使用本文件的平方求和函数
+for i in range(5):
+    print('第{num}个数' .format(num=i+1))
+    out3 = squ_sum(i+1)
+    print('累加平方求和值为{sum}'.format(sum=out3))
